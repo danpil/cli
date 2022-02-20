@@ -1,3 +1,4 @@
+import 'package:cli/delimeters_calculator.dart';
 import 'package:cli/num.dart';
 import 'package:cli/point.dart';
 import 'package:cli/string_utils.dart';
@@ -7,14 +8,14 @@ import 'package:cli/math.dart';
 void main(List<String> arguments) {
   // 1
   print('----------1-----------');
-  print(gcd_two_numbers(8, 9));
-  print(lcm_two_numbers(5,25));
-  myNewFunction(3);
+  print(DelimetersCalculator.gcd(8, 9));
+  print(DelimetersCalculator.lcm(5,25));
+  DelimetersCalculator.simpleFactors(3);
 
   // 2
   print('----------2-----------');
-  print('${toDecimalSystem('110')}');
-  print('${toBinarySystem(6)}');
+  print('${DelimetersCalculator.toDecimalSystem('110')}');
+  print('${DelimetersCalculator.toBinarySystem(6)}');
 
   // 3
   print('----------3-----------');
